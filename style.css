@@ -1,0 +1,191 @@
+*,*::before,*:after{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  display: flex;
+  height: 160px;
+  background: rgba(235, 69, 160, 0.726);
+  width: 100%;
+  border: thick double rgb(128, 18, 64, 0.596);
+}
+
+.content-head{
+  height: 150px;
+  width: 96%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__logo{
+ padding: 14px 10px 10px 10px;
+ float: left;
+}
+
+.header__text{
+  font-family: 'Space Mono', monospace;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+html,body{
+  height: 100%;
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+  background-color: rgb(230, 134, 195);
+
+
+}
+
+#form1{
+  padding-left: 40%;
+}
+
+.formm{
+  padding: 50px;
+}
+
+.wrapper{
+  height: 100%;
+  padding: 50px;
+}
+@media screen and (max-width:480px) {
+  .header{
+    width:auto;
+  }
+  .header__text{
+    font-size: 16px;
+    height: 30px;
+  }
+  .header__logo{
+    width: 160px;
+  }
+}
+@media screen and (max-width:1300px) {
+  .header__logo{
+    width: 200px;
+  }
+}
+
+/*PopUp css*/
+
+body.lock {
+  overflow: hidden;
+}
+
+.popup{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+}
+
+
+.popup__area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+.popup__body{
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content{
+  background: linear-gradient(90deg, rgb(243, 155, 198) 0%, rgb(65, 42, 55) 100%);
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+}
+
+
+.popup__title{
+  font-size: 25px;
+  margin: 0px 0px 1em 0px;
+  padding-left: 1px;
+
+}
+
+
+
+.login__elem{
+  background: transparent;
+  border: 2px solid rgba(0,0,0,.8);
+
+  line-height: 1.2;
+  font-weight: 500;
+  padding: 26px 24px;
+  color: #000;
+
+  font-size: 14px;
+  width: 480px;
+  height: 54px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-left: 24px;
+
+  margin-bottom: 8px;
+  transition: 0.4s;
+  margin-left: auto;
+}
+
+.login__elem::placeholder{
+  color: white;
+}
+
+.popup__btn{
+  text-transform: uppercase;
+  color: white;
+  width: 480px;
+  height: 60px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background: rgba(0,0,0,.8);;
+  transition: 0.4s;
+  font-size: 12px;
+}
+
+.popup__btn:hover{
+  background: linear-gradient(90deg, rgba(243, 155, 198) 0%, rgba(65, 42, 55) 100%);
+}
+
+
+
+header{
+width: 100%;
+height: 70px;
+
+}
+
+.login__btn{
+  position: absolute;
+  top: 20px;
+  right: 75px;
+}
+
+.log__btn{
+  text-decoration: none;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.log__btn:hover{
+  text-decoration: underline;
+  color: #fff;
+}
